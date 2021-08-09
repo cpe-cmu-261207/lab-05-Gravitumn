@@ -37,7 +37,7 @@ const TodoList = () => {
         
     }
     const deleteTask = (id: Number) => {
-        const newTasks = tasks.filter(x => x.id !== id)
+        const newTasks = tasks.filter(x => {return x.id!==id})
         setTasks(newTasks)
     }
     const finishTask = (id:Number) =>{
